@@ -1,0 +1,21 @@
+ -+- Super Snazzy New Animal Report -+- 
+
+[Animal] hyena [Name] Shenzi [Age] 4
+[Animal] hyena [Name] Banzai [Age] 12
+[Animal] hyena [Name] Ed [Age] 4
+[Animal] hyena [Name] Zig [Age] 8
+[Animal] lion [Name] Scar [Age] 6
+[Animal] lion [Name] Mufasa [Age] 12
+[Animal] lion [Name] Simba [Age] 22
+[Animal] lion [Name] Kiara [Age] 4
+[Animal] tiger [Name] Tony [Age] 2
+[Animal] tiger [Name] Tigger [Age] 4
+[Animal] tiger [Name] Amber [Age] 18
+[Animal] tiger [Name] Cosimia [Age] 3
+[Animal] bear [Name] Yogi [Age] 7
+[Animal] bear [Name] Smokey [Age] 25
+[Animal] bear [Name] Paddington [Age] 4
+[Animal] bear [Name] Lippy [Age] 4
+
+Current Species Count: {hyena=4, bear=4, tiger=4, lion=4}
+Total Number of Animals: 16

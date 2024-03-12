@@ -120,20 +120,7 @@ public class Main {
                     // Use the same for loop to get the array into the proper ArrayList.
                     for (String someName : myHyenaNamesArray)
                         hyenaNames.add(someName);
-
                 }
-
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + aFilePath);
-            e.printStackTrace();
-        }
-
-        try (Scanner scanner = new Scanner(aFile)) {
-            while (scanner.hasNextLine()) {
-                String aLine = scanner.nextLine();
-
-                System.out.println("\n aLine = " + aLine);
 
                 if (aLine.contains("Lion")) {
                     // Skip the next line because it is a blank line.
@@ -148,20 +135,7 @@ public class Main {
                     // Use the same for loop to get the array into the proper ArrayList.
                     for (String someName : myLionsNamesArray)
                         lionNames.add(someName);
-
                 }
-
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + aFilePath);
-            e.printStackTrace();
-        }
-
-        try (Scanner scanner = new Scanner(aFile)) {
-            while (scanner.hasNextLine()) {
-                String aLine = scanner.nextLine();
-
-                System.out.println("\n aLine = " + aLine);
 
                 if (aLine.contains("Tiger")) {
                     // Skip the next line because it is a blank line.
@@ -176,20 +150,7 @@ public class Main {
                     // Use the same for loop to get the array into the proper ArrayList.
                     for (String someName : myTigerNamesArray)
                         tigerNames.add(someName);
-
                 }
-
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + aFilePath);
-            e.printStackTrace();
-        }
-
-        try (Scanner scanner = new Scanner(aFile)) {
-            while (scanner.hasNextLine()) {
-                String aLine = scanner.nextLine();
-
-                System.out.println("\n aLine = " + aLine);
 
                 if (aLine.contains("Bear")) {
                     // Skip the next line because it is a blank line.
@@ -204,7 +165,6 @@ public class Main {
                     // Use the same for loop to get the array into the proper ArrayList.
                     for (String someName : myBearsNamesArray)
                         bearNames.add(someName);
-
                 }
 
             }
@@ -213,6 +173,8 @@ public class Main {
             e.printStackTrace();
         }
 
+        // Refactored this code to compact it up, instead of having multiple loop
+        // statements
 
         for (Animal animal : animals) {
             if (animal.species.equals("hyena")) {
@@ -236,9 +198,7 @@ public class Main {
                 bearNames.remove(0);
             }
 
-
         }
-
 
         // Write the report, iterating through the animal objects and outputting the
         // data by species with name and age
